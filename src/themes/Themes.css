@@ -1,0 +1,74 @@
+/* Fullscreen layout (like Homepage) */
+.themes-page {
+    min-height: 100vh;
+    /* full screen */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* Title */
+.themes-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--text-color);
+}
+
+/* Grid for theme cards */
+.themes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Theme cards */
+.themes-card {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 30px 20px;
+    border-radius: 14px;
+    cursor: pointer;
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.themes-card:hover {
+    transform: scale(1.05);
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+/* THEMES */
+body.light {
+    --primary-color: #ffffff;
+    --text-color: #000000;
+    --accent-color: #c30000;
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+body.dark {
+    --primary-color: #121212;
+    --text-color: #ffffff;
+    --accent-color: #bb86fc;
+    background-color: #181818;
+    color: #fff;
+}
+
+body.blue {
+    --primary-color: #001f3f;
+    --text-color: #ffffff;
+    --accent-color: #00bfff;
+    background-color: #003366;
+    color: #fff;
+}

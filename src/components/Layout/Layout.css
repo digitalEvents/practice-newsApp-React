@@ -1,0 +1,23 @@
+.layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+/* Right-side area (Navbar + Page Content) */
+.layout-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+}
+
+/* Main content area */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    overflow-y: auto;
+}
